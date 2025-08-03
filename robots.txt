@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: http://www.goldedgelearning.info/sitemap.xml
+Sitemap: https://www.goldedgelearning.info/sitemap.xml
