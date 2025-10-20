@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The be10x AI Tools Workshop | ₹99 Registration</title>
+    
+    <style>
+        :root {
+            --primary-color: #FF4500; /* Deep Orange/Red for urgency */
+            --secondary-color: #1a1a1a;
+            --text-color: #333;
+            --bg-color: #ffffff;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px; /* Keep it narrow for focus */
+            margin: 0 auto;
+        }
+        header h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        /* Countdown Timer Style */
+        #countdown-box {
+            background: #ffe6e6; /* Light red/pink background */
+            border: 2px dashed var(--primary-color);
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        #countdown-box p {
+            font-size: 0.9em;
+            color: #d80000;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        #timer {
+            font-size: 2em;
+            font-weight: 700;
+            color: var(--secondary-color);
+            letter-spacing: 2px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .time-unit span {
+            display: block;
+            font-size: 0.4em;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #666;
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            text-align: left;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+        .benefits h2 {
+            font-size: 1.4em;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .benefits ul {
+            list-style: none;
+        }
+        .benefits li {
+            padding: 10px 0;
+            border-bottom: 1px dotted #e0e0e0;
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+        }
+        .benefits li:last-child {
+            border-bottom: none;
+        }
+        .benefits li::before {
+            content: '✓';
+            color: #008000; /* Green checkmark */
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: block;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 1.8em;
+            font-weight: 900;
+            text-decoration: none;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 6px 0 0 #b33100; /* 3D effect */
+            transition: all 0.1s ease-in-out;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .cta-button:hover {
+            background-color: #e63e00;
+            box-shadow: 0 4px 0 0 #b33100;
+            transform: translateY(2px);
+        }
+        .price-text {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-top: 10px;
+        }
+        .price-text strong {
+            color: var(--primary-color);
+            font-size: 1.4em;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            .cta-button {
+                font-size: 1.4em;
+                padding: 15px;
+            }
+            #timer {
+                font-size: 1.5em;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>LIMITED TIME WORKSHOP OFFER</p>
+            <h1>MASTER 5 HIGH-INCOME AI TOOLS IN 90 MINUTES</h1>
+            <p>From **Zero to AI Pro** in one power-packed, live session.</p>
+        </header>
+
+        <div id="countdown-box">
+            <p>🚨 REGISTRATION CLOSES IN:</p>
+            <div id="timer">
+                <div class="time-unit" id="days"><span class="unit">Days</span></div>
+                <div class="time-unit" id="hours"><span class="unit">Hours</span></div>
+                <div class="time-unit" id="minutes"><span class="unit">Minutes</span></div>
+                <div class="time-unit" id="seconds"><span class="unit">Seconds</span></div>
+            </div>
+        </div>
+
+        <a href="#" class="cta-button" id="cta-link">
+            Yes, I Want to Register Now!
+        </a>
+        <p class="price-text">Only <strong>₹99</strong> (Price goes up in 1 hour)</p>
+
+        <div class="benefits">
+            <h2>WHAT YOU WILL LEARN:</h2>
+            <ul>
+                <li>Create **Viral Content** 10x Faster with AI (For Instagram/LinkedIn).</li>
+                <li>Automate **Client Outreach** and Emails (No more manual copy-pasting).</li>
+                <li>Build an **AI Side-Hustle** using 3 simple tools (Start earning this month).</li>
+                <li>Discover the **5 Must-Have AI Tools** the pros use (The $\text{₹}1 \text{Lakh}$ stack for $\text{₹}0$).</li>
+                <li>Lifetime Access to the **Recording & Resource Sheet**.</li>
+            </ul>
+        </div>
+        
+        <footer>
+             <p style="font-size:0.8em; color:#999; margin-top: 20px;">*The workshop will be held live via Zoom/Google Meet. Details shared instantly after registration.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Set the date you're counting down to (1 hour from now for urgency)
+        const ONE_HOUR = 60 * 60 * 1000;
+        const COUNTDOWN_DATE = new Date().getTime() + ONE_HOUR;
+
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = COUNTDOWN_DATE - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1
